@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(to right, #672280, #6c4b79);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header img {
+  padding: 15px;
+  height: 27px;
+  width: 32px;
+}
+
+.textOptions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  margin: 25px auto;
+  gap: 10px;
+}
+.textOptions input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(136, 131, 131, 0.596);
+  font-size: 1.1rem;
+}
+
+.textOptions .newMeme {
+  background: linear-gradient(to right, #672280, #6c4b79);
+  grid-column: span 2;
+  width: 100%;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(136, 131, 131, 0.596);
+}
+
+.memeImg {
+  margin: 0 auto;
+}
+
+.memeImg img {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .memeImg img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

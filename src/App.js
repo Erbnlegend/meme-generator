@@ -1,22 +1,18 @@
 import React from 'react'
 import Main from '../components/Main'
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import MemeText from '../components/Meme'
+
+import './assets/Troll-Face.svg'
 
 export default function App () {
-  const getDate = new Date()
-  const hour = getDate.getHours()
-  const minute = getDate.getMinutes()
   return (
     <div>
-      <Navbar />
-      <Main
-        name="Hello"
-        date={`${hour}:${minute}`}
-        />
-      <Main
-      name="Baby"
-      date={`${hour}:${minute}`}
-      />
+      <Header />
+      <div className='container'>
+        <Main/>
+        <MemeText />
+      </div>
     </div>
   )
 }
